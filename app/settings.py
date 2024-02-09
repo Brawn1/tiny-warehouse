@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "warehouse.apps.WarehouseConfig"
 ]
 
 MIDDLEWARE = [
@@ -67,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'app.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database
