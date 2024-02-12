@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+    'app',
     'warehouse.apps.WarehouseConfig',
     'electronic.apps.ElectronicConfig',
     # 'oldtimers.apps.OldtimersConfig'
@@ -86,6 +87,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'wsgi.application'
 
+AUTH_USER_MODEL = 'app.CustomUser'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -149,7 +151,7 @@ USE_TZ = True
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    # 'compressor.finders.CompressorFinder',
+#     'compressor.finders.CompressorFinder',
 )
 
 STATIC_URL = '/static/'
@@ -174,7 +176,6 @@ REST_FRAMEWORK = {
         # 'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
-
 
 
 try:
