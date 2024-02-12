@@ -16,3 +16,4 @@ pyOpenSSL
 python-dateutil
 coreapi
 django-colorfield
+uwsgi
