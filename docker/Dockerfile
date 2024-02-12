@@ -25,11 +25,11 @@ RUN useradd -M -d $PRJPATH -s /bin/bash django
 #change workdir
 WORKDIR $PRJPATH
 # copy and install python requirements
-COPY requirements.txt $PRJPATH/
+COPY requirements/common.txt $PRJPATH/
 RUN pip3 install -U pip && \
-    pip3 install --no-cache-dir -r requirements.txt
+    pip3 install --no-cache-dir -r common.txt
 # copy project related files
-COPY app warehouse templates $PRJPATH/
+COPY app warehouse templates electronic oldtimers $PRJPATH/
 COPY manage.py asgi.py LICENSE wsgi.py docker/uwsgi.ini docker/entrypoint.sh $PRJPATH/
 
 # set permissions on files
