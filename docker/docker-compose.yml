@@ -1,0 +1,38 @@
+version: '3.0'
+
+services:
+  postgres:
+    restart: on-failure
+    image: postgres:15
+    shm_size: "2g"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - backend
+    env_file:
+      - .env
+
+  tinywarehouse:
+    restart: on-failure
+    image: guenterbailey/tiny-warehouse:main
+    shm_size: "512m"
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - postgres
+    networks:
+      - backend
+    ports:
+      - "8000:8001"
+    volumes:
+      - media:/web/templates/media
+    env_file:
+      - .env
+    command: uwsgi --ini uwsgi.ini
+
+networks:
+  backend:
+
+volumes:
+  pgdata:
+  media:
