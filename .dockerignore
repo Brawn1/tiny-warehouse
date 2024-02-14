@@ -1,2 +1,3 @@
 __pycache__/
 warehouse/private_settings.py
+templates/static-only/
