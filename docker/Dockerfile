@@ -29,7 +29,10 @@ COPY requirements/common.txt $PRJPATH/
 RUN pip3 install -U pip && \
     pip3 install --no-cache-dir -r common.txt
 # copy project related files
-COPY app warehouse templates electronic oldtimers $PRJPATH/
+COPY warehouse $PRJPATH/warehouse
+COPY templates $PRJPATH/templates
+COPY oldtimers $PRJPATH/oldtimers
+COPY electronic $PRJPATH/electronic
 COPY manage.py asgi.py LICENSE wsgi.py docker/uwsgi.ini docker/entrypoint.sh $PRJPATH/
 
 # set permissions on files

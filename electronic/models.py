@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.utils import timezone
-from warehouse.models import BaseModel, Warehouse, Manufacturer
+from warehouse.models.warehouse import BaseModel, Warehouse, Manufacturer
 
 
 class AssortmentBox(BaseModel):

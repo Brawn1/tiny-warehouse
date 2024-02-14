@@ -1,5 +1,5 @@
 # project
-app/private_settings.py
+warehouse/private_settings.py
 templates/static-only
 
 # Byte-compiled / optimized / DLL files

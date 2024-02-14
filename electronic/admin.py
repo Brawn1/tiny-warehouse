@@ -15,9 +15,12 @@ class CompartmentForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(CompartmentForm, self).__init__(*args, **kwargs)
-        query = Compartment.objects.all().latest('id')
-        self.fields['number'].initial = query.number + 1
-        self.fields['assortment_box'].initial = query.assortment_box
+        if Compartment.objects.all().exists():
+            query = Compartment.objects.all().latest('id')
+            self.fields['number'].initial = query.number + 1
+            self.fields['assortment_box'].initial = query.assortment_box
+        else:
+            self.fields['number'].initial = 1
 
 
 class CompartmentAdmin(admin.ModelAdmin):
