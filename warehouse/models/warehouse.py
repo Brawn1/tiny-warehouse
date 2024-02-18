@@ -20,6 +20,7 @@ class Manufacturer(BaseModel):
         constraints = [
             models.UniqueConstraint(fields=['name', 'website'], name='unique_manufacturer')
         ]
+        ordering = ['name']
 
     def __str__(self):
         return self.name
@@ -35,6 +36,7 @@ class Warehouse(BaseModel):
         constraints = [
             models.UniqueConstraint(fields=['name', 'location'], name='unique_warehouse')
         ]
+        ordering = ['name']
 
     def __str__(self):
         return f"{self.name} ({self.location})"

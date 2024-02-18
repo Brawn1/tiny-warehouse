@@ -11,6 +11,7 @@ class AssortmentBox(BaseModel):
     class Meta:
         verbose_name = _("Assortment Box")
         verbose_name_plural = _("Assortment Boxes")
+        ordering = ['name', 'warehouse__name']
         constraints = [
             models.UniqueConstraint(fields=['name', 'warehouse'], name='unique_assortment_box')
         ]
@@ -25,6 +26,7 @@ class PartCategory(models.Model):
     image = models.ImageField(upload_to='categories/', blank=True, null=True, verbose_name=_("Image"))
 
     class Meta:
+        ordering = ['name']
         verbose_name = _("Part Category")
         verbose_name_plural = _("Part Categories")
 
@@ -47,6 +49,7 @@ class Part(BaseModel):
         constraints = [
             models.UniqueConstraint(fields=['name', 'manufacturer'], name='unique_part')
         ]
+        ordering = ['name', 'manufacturer__name']
 
     def __str__(self):
         return f"{self.name} - {self.manufacturer}"
@@ -65,6 +68,7 @@ class Compartment(BaseModel):
         constraints = [
             models.UniqueConstraint(fields=['number', 'assortment_box', 'part'], name='unique_compartment')
         ]
+        ordering = ['assortment_box', 'number']
 
     def __str__(self):
         return f"{self.assortment_box} - {self.number}"
