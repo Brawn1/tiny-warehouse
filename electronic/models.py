@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.html import mark_safe
 from django.utils.translation import gettext_lazy as _
 from django.utils import timezone
 from warehouse.models.warehouse import BaseModel, Warehouse, Manufacturer
@@ -33,6 +34,9 @@ class PartCategory(models.Model):
     def __str__(self):
         return self.name
 
+    def image_tag(self):
+        return mark_safe(f'<img src="{self.image.url}" width="150" height="150" />')
+
 
 class Part(BaseModel):
 
@@ -53,6 +57,9 @@ class Part(BaseModel):
 
     def __str__(self):
         return f"{self.name} - {self.manufacturer}"
+
+    def image_tag(self):
+        return mark_safe(f'<img src="{self.image.url}" width="150" height="150" />')
 
 
 class Compartment(BaseModel):

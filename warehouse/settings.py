@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'warehouse',
     'electronic',
-    # 'oldtimers.apps.OldtimersConfig'
+    'oldtimers',
 ]
 
 MIDDLEWARE = [
