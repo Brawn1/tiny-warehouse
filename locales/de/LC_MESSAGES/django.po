@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-15 23:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: electronic/models.py:9 electronic/models.py:25 electronic/models.py:43
+#: oldtimers/models.py:10 oldtimers/models.py:25 oldtimers/models.py:47
+#: oldtimers/models.py:66 warehouse/models/warehouse.py:14
+#: warehouse/models/warehouse.py:30
+msgid "Name"
+msgstr ""
+
+#: electronic/models.py:10 oldtimers/models.py:11
+#: warehouse/models/warehouse.py:34
+msgid "Warehouse"
+msgstr "Lager"
+
+#: electronic/models.py:13 electronic/models.py:69
+msgid "Assortment Box"
+msgstr "Teilebox"
+
+#: electronic/models.py:14
+msgid "Assortment Boxes"
+msgstr "Teileboxen"
+
+#: electronic/models.py:26 oldtimers/models.py:31 oldtimers/models.py:48
+#: oldtimers/models.py:67
+msgid "Description"
+msgstr "Beschreibung"
+
+#: electronic/models.py:27 electronic/models.py:45 oldtimers/models.py:28
+#: oldtimers/models.py:49 oldtimers/models.py:107
+msgid "Image"
+msgstr "Bild"
+
+#: electronic/models.py:31 oldtimers/models.py:52
+msgid "Part Category"
+msgstr "Teile Kategorie"
+
+#: electronic/models.py:32 oldtimers/models.py:53
+msgid "Part Categories"
+msgstr "Teile Kategorien"
+
+#: electronic/models.py:44 oldtimers/models.py:27 oldtimers/models.py:79
+#: warehouse/models/warehouse.py:18
+msgid "Manufacturer"
+msgstr "Hersteller"
+
+#: electronic/models.py:46 oldtimers/models.py:29 oldtimers/models.py:125
+msgid "Datasheet"
+msgstr "Datenblatt"
+
+#: electronic/models.py:47 oldtimers/models.py:76
+msgid "Category"
+msgstr "Kategorie"
+
+#: electronic/models.py:48
+msgid "Part Type"
+msgstr "Teile Typ"
+
+#: electronic/models.py:51 electronic/models.py:67 oldtimers/models.py:83
+#: oldtimers/models.py:109 oldtimers/models.py:127 oldtimers/models.py:140
+msgid "Part"
+msgstr "Teil"
+
+#: electronic/models.py:52 oldtimers/models.py:84
+msgid "Parts"
+msgstr "Teile"
+
+#: electronic/models.py:66
+msgid "Number"
+msgstr "Nummer"
+
+#: electronic/models.py:68 oldtimers/models.py:69 oldtimers/models.py:146
+msgid "Quantity"
+msgstr "Stück"
+
+#: electronic/models.py:72
+msgid "Compartment"
+msgstr "Einteilung"
+
+#: electronic/models.py:73
+msgid "Compartments"
+msgstr "Einteilungen"
+
+#: oldtimers/models.py:14 oldtimers/models.py:63
+msgid "Storage Location"
+msgstr "Lagerort"
+
+#: oldtimers/models.py:15
+msgid "Storage Locations"
+msgstr "Lagerorte"
+
+#: oldtimers/models.py:26
+msgid "Model"
+msgstr ""
+
+#: oldtimers/models.py:30
+msgid "Model Year"
+msgstr "Baujahr"
+
+#: oldtimers/models.py:32
+msgid "Vehicle Number"
+msgstr "Fahrzeugnummer"
+
+#: oldtimers/models.py:33
+msgid "Engine"
+msgstr "Motor"
+
+#: oldtimers/models.py:36
+msgid "Vehicle"
+msgstr "Fahrzeug"
+
+#: oldtimers/models.py:37
+msgid "Vehicles"
+msgstr "Fahrzeuge"
+
+#: oldtimers/models.py:65 oldtimers/models.py:143
+msgid "Part Number"
+msgstr "Teile Nummer"
+
+#: oldtimers/models.py:70
+msgid "In Stock"
+msgstr "Auf Lager"
+
+#: oldtimers/models.py:72
+msgid "Price"
+msgstr "Preis"
+
+#: oldtimers/models.py:108 oldtimers/models.py:126
+msgid "Title"
+msgstr "Titel"
+
+#: oldtimers/models.py:110 oldtimers/models.py:128
+#: warehouse/models/warehouse.py:6
+msgid "Created At"
+msgstr "Erstellt am"
+
+#: oldtimers/models.py:113
+msgid "Part Image"
+msgstr "Teile Bild"
+
+#: oldtimers/models.py:114
+msgid "Part Images"
+msgstr "Teile Bilder"
+
+#: oldtimers/models.py:131
+msgid "Part File"
+msgstr "Teile Datei"
+
+#: oldtimers/models.py:132
+msgid "Part Files"
+msgstr "Teile Dateien"
+
+#: oldtimers/models.py:141
+msgid "Distributor"
+msgstr "Lieferant"
+
+#: oldtimers/models.py:142
+msgid "Web Link"
+msgstr ""
+
+#: oldtimers/models.py:144
+msgid "Sales Price"
+msgstr "Verkaufspreis"
+
+#: warehouse/models/users.py:17
+msgid "The Email must be set"
+msgstr ""
+
+#: warehouse/models/users.py:33
+msgid "Superuser must have is_staff=True."
+msgstr ""
+
+#: warehouse/models/users.py:35
+msgid "Superuser must have is_superuser=True."
+msgstr ""
+
+#: warehouse/models/users.py:41
+msgid "email address"
+msgstr "E-Mail Adresse"
+
+#: warehouse/models/warehouse.py:7
+msgid "Updated At"
+msgstr "Aktualisiert am"
+
+#: warehouse/models/warehouse.py:15
+msgid "Website"
+msgstr "Webseite"
+
+#: warehouse/models/warehouse.py:19
+msgid "Manufacturers"
+msgstr "Hersteller"
+
+#: warehouse/models/warehouse.py:31
+msgid "Location"
+msgstr "Ort"
+
+#: warehouse/models/warehouse.py:35
+msgid "Warehouses"
+msgstr "Lager"
+
+#: warehouse/settings.py:126
+msgid "German"
+msgstr "Deutsch"
+
+#: warehouse/settings.py:127
+msgid "English"
+msgstr "Englisch"
